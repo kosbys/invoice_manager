@@ -1,0 +1,121 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #caf0f8;
+  --tertiary: #ffffff;
+  --background: #edf2f4;
+  --text: #001219;
+  --text-2: #252422;
+  --text-header: #1b263b;
+  --add-hover: #ccacff;
+  --add-background: #59d0ff;
+  --delete: #ff4646;
+  --delete-hover: #c2282a;
+  --edit: #ffee32;
+  --edit-hover: #86880b;
+}
+
+[data-theme="dark"] {
+  --primary: #778da9;
+  --secondary: #1b263b;
+  --tertiary: #415a77;
+  --background: #0d1b2a;
+  --text: #e0e1dd;
+  --text-2: #e5e5e5;
+  --add-hover: #415a77;
+  --add-background: #0d4153;
+  --delete: #780000;
+  --delete-hover: #9e2a2b;
+  --edit: #e85d04;
+  --edit-hover: #fb8500;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.dropdown {
+  align-self: center;
+}
+
+.header-title {
+  color: var(--text-header);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+.txt {
+  color: var(--text);
+}
+
+th {
+  color: var(--text) !important;
+  background-color: var(--secondary) !important;
+}
+
+td {
+  color: var(--text-2) !important;
+  background-color: var(--tertiary) !important;
+  text-align: center;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.background {
+  background-color: var(--primary);
+}
+
+.edit {
+  color: var(--text);
+  background-color: var(--edit);
+  border-color: var(--edit);
+}
+
+.edit:hover {
+  background-color: var(--edit-hover) !important;
+  border-color: var(--edit-hover) !important;
+}
+
+.delete {
+  color: var(--text);
+  background-color: var(--delete);
+  border-color: var(--delete);
+}
+
+.delete:hover {
+  background-color: var(--delete-hover) !important;
+  border-color: var(--delete-hover) !important;
+}
+
+#add-invoice,
+#theme-button {
+  background-color: var(--add-background) !important;
+  border-color: var(--add-background);
+  color: var(--text) !important;
+}
+
+#add-invoice:hover,
+#theme-button:hover {
+  background-color: var(--add-hover) !important;
+  border-color: var(--add-background);
+}
+
+#edit-invoice {
+  color: var(--text);
+  background-color: var(--edit);
+  border-color: var(--edit);
+}
+
+#edit-invoice:hover {
+  background-color: var(--edit-hover) !important;
+  border-color: var(--edit-hover) !important;
+}
+
+.footer-data {
+  color: var(--text) !important;
+  background-color: var(--secondary) !important;
+}
